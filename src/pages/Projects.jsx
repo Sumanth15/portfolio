@@ -16,21 +16,21 @@ import CloseIcon from "@mui/icons-material/Close";
 const projects = [
   { 
     title: "TV Application", 
-    description: "This is a full detailed blog style description of the portfolio project. You can explain the tech stack, features, challenges, and outcomes here. Add as much detail as you like to make it a real blog style content.",
+    description: "This is a TV application for rural India where the students can watch educational videos. The app is built using React Native and Redux for state management. It features offline capabilities, allowing users to download content for later viewing without an internet connection. The UI is designed to be simple and intuitive, with large buttons and easy navigation to accommodate users who may not be tech-savvy.",
     type: "mobile",
     images: [Xtendlogo, Xtendhome], 
     logo: Xtendlogo
   },
   { 
     title: "E-commerce Application", 
-    description: "This is a detailed description about the E-commerce app. Write about Redux, Firebase integration, payment flow, product management, and responsive design in this blog style format.",
+    description: "This is an e-commerce application for a local grocery store. The app is built using React Native and Redux for state management. It features a product catalog, shopping cart, and secure checkout process. Users can browse products by category, add items to their cart, and complete their purchase using various payment methods. The app also includes user authentication and order history features.",
     type: "mobile",
     images: [UGlogo, ugcate], 
     logo: UGlogo
   },
   { 
     title: "Sleep Application", 
-    description: "Here’s where you add the long-form blog description for your chat app project. Mention realtime updates with Firebase, authentication, chat rooms, and how you handled scalability issues.",
+    description: "This is a sleep tracking application designed to help users improve their sleep quality. The app is built using React Native and Redux for state management. It features sleep tracking, guided meditations, yogasanas, and sleep analysis. Users can set sleep goals, track their sleep patterns, and receive personalized recommendations for better sleep. The users can chat with assigned doctors for the guiding. The app also includes a library of relaxing sounds and bedtime stories to help users fall asleep faster.",
     type: "mobile",
     images: [nidralogo, categories, nidragraph],
     logo: nidralogo
