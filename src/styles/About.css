@@ -1,0 +1,55 @@
+.about {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.about-intro {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.about-card {
+  flex: 1;
+  min-width: 280px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.about-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.about-card p {
+  color: #555;
+  line-height: 1.5;
+}
+
+.about-card ul {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.about-card li {
+  margin-bottom: 0.5rem;
+  color: #444;
+}
