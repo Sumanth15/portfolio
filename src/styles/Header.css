@@ -1,3 +1,5 @@
+
+/* Base Header Styles */
 .header {
   background-color: rgba(255, 255, 255, 0.9) !important;
   backdrop-filter: blur(10px);
@@ -10,111 +12,197 @@
   padding: 0.5rem 1rem;
 }
 
-
+/* Toolbar - Inner container */
 .toolbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  width: 100%;
+  min-height: 60px;
 }
 
-/* Logo styling */
 .logo {
   text-decoration: none;
   color: inherit;
   font-weight: bold;
   font-size: 1.25rem;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
-/* Desktop nav */
+/* Desktop Navigation */
 .desktop-nav {
   display: flex;
-  gap: 1.5rem;
+  justify-content: flex-end;
   align-items: center;
+  gap: 0.5rem;
+  flex-wrap: nowrap;
 }
 
 .nav-link {
   color: inherit !important;
-  text-transform: none;
-  font-size: 1rem;
-  transition: color 0.2s ease;
+  text-transform: none !important;
+  font-size: 0.95rem !important;
+  font-weight: 500 !important;
+  padding: 0.4rem 0.6rem !important;
+  transition: color 0.2s ease !important;
+  white-space: nowrap;
+  min-width: auto !important;
 }
 
 .nav-link:hover {
   color: #333 !important;
 }
 
-/* Hire Me button */
 .hire-me-btn {
-  margin-left: 1rem !important;
+  margin-left: 0.5rem !important;
   text-transform: none !important;
   background-color: black !important;
   color: white !important;
-  padding: 0.5rem 1rem !important;
+  padding: 0.45rem 0.9rem !important;
   border-radius: 8px !important;
   font-weight: 600 !important;
-  transition: background-color 0.2s ease;
+  font-size: 0.9rem !important;
+  transition: background-color 0.2s ease !important;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .hire-me-btn:hover {
   background-color: #333 !important;
 }
 
-/* Mobile menu button */
+/* Mobile Menu Button - Hidden by default */
 .mobile-menu-btn {
   display: none !important;
+  color: black !important;
 }
 
-/* Drawer content */
+/* Drawer Styles */
 .drawer {
-  width: 240px;
-  padding: 1rem;
+  width: 260px;
+  padding: 1.5rem 1rem;
+}
+
+.drawer .MuiList-root {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
-/* ✅ Responsiveness */
+.drawer .MuiListItem-root {
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+}
+
+.drawer .hire-me-btn {
+  margin: 1.5rem 0 0 0 !important;
+  width: 100%;
+  padding: 0.65rem 1rem !important;
+}
+
+/* ========== RESPONSIVE BREAKPOINTS ========== */
+
+/* Large Desktop (1200px+) - Full spacing */
+@media (min-width: 1201px) {
+  .toolbar {
+    padding: 0 2rem;
+  }
+}
+
+/* Desktop (1025px - 1200px) - Slightly reduced */
+@media (max-width: 1200px) {
+  .desktop-nav {
+    gap: 1.25rem;
+  }
+  
+  .nav-link {
+    font-size: 0.95rem !important;
+    padding: 0.45rem 0.65rem !important;
+  }
+  
+  .hire-me-btn {
+    padding: 0.45rem 0.9rem !important;
+    margin-left: 0.75rem !important;
+  }
+}
+
+/* Tablet Landscape (951px - 1024px) - More compact */
 @media (max-width: 1024px) {
   .desktop-nav {
     gap: 1rem;
   }
-
+  
   .nav-link {
-    font-size: 0.95rem;
+    font-size: 0.9rem !important;
+    padding: 0.4rem 0.6rem !important;
   }
-
+  
   .hire-me-btn {
-    padding: 0.45rem 0.9rem !important;
+    padding: 0.4rem 0.85rem !important;
+    font-size: 0.9rem !important;
+    margin-left: 0.5rem !important;
+  }
+  
+  .logo {
+    font-size: 1.2rem;
   }
 }
 
-@media (max-width: 768px) {
+/* SWITCH TO MOBILE MENU (950px and below) */
+@media (max-width: 950px) {
   .desktop-nav {
     display: none !important;
   }
-
+  
   .mobile-menu-btn {
     display: inline-flex !important;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .hire-me-btn {
-    margin-left: 0 !important; /* avoid awkward spacing */
   }
 }
 
+/* Tablet Portrait (768px and below) */
+@media (max-width: 768px) {
+  .toolbar {
+    min-height: 56px;
+  }
+  
+  .logo {
+    font-size: 1.15rem;
+  }
+}
+
+/* Mobile (480px and below) */
 @media (max-width: 480px) {
+  .header {
+    padding: 0.4rem 0.75rem;
+  }
+  
+  .toolbar {
+    min-height: 52px;
+  }
+  
   .logo {
     font-size: 1rem;
   }
+  
+  .mobile-menu-btn {
+    padding: 0.4rem !important;
+  }
+}
 
-  .hire-me-btn {
-    font-size: 0.9rem !important;
-    padding: 0.4rem 0.8rem !important;
+/* Extra Small Mobile (360px and below) */
+@media (max-width: 360px) {
+  .header {
+    padding: 0.4rem 0.5rem;
+  }
+  
+  .logo {
+    font-size: 0.95rem;
+  }
+  
+  .drawer {
+    width: 220px;
   }
 }
