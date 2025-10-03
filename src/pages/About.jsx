@@ -7,24 +7,23 @@ const About = () => {
       <h1 className="about-title">About Me</h1>
       <p className="about-intro">
         I'm a passionate developer who loves building modern web and mobile experiences
-        with React, React Native with MERN stack. I focus on performance, accessibility,
-        and delightful UX.
+        with React Native and MERN stack. I focus on performance, accessibility,
+        and providing a delightful UX.
       </p>
       <p className="about-intro">
-        I am a graduate of Master of Computer Apllications from PES University, Banglore in 2023.
-        My specialization is in Full Stack Web Development and cybersecurity. 
+        I am a graduate in Master of Computer Apllications from PES University, Banglore in 2023.
+        My specialization is in Full Stack Web Development and Cybersecurity. 
         I have a strong foundation in both frontend and backend technologies. 
         From my college days I am into developing projects and learning new technologies.
-        While I was studying I have devloped a project that visualises how doubley linked list works using HTML and CSS.
-        My main project was on android app development where i hae developed an app that helps user to manager their bugets and expenses.
+        While I was studying I have developed a project that visualises how doubley linked list works using HTML and CSS.
+        My main project was on Android app development where i have developed an app that helps user to manage their buget and expenses.
       </p>
       <p className="about-intro">
-        Though, I was an android developer I have always been facinated about web development and the user experience it provides.
+        Though I was an Android developer I have always been facinated about web development and the user experience it provides.
         During my tenure I have worked on several projects using HTML, CSS, JavaScript, React, Node.js, Express and MongoDB.
-        I have also worked with firebase for backend services and hosting.
-        I am always eager to learn new technologies and improve my skills.
-        Till now have worked on 9 defferent projects. I have worked on 
-        e-commerce website, blog website, portfolio website, chat application, Sleep application, TV application, Company HRMS website and many more.
+        I have also worked with Firebase for backend services and hosting.
+        Till now have worked on different projects. I have worked on 
+        a e-commerce website, a blog website, a portfolio website, a chat application, a Sleep application, a TV application, a Company HRMS website and many more.
         I am currently working as a freelance web developer and looking for opportunities to work with a team.
         I am open to internships and full-time opportunities.
         You can reach out to me via the contact form in the contact section.
