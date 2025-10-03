@@ -1,13 +1,33 @@
 import React from "react";
 import "../../src/styles/home.css";
 import heroImage from "../assets/computerImage.jpg"; 
+import { useState, useEffect } from "react";
 
 const Home = () => {
+
+   const [displayText, setDisplayText] = useState("");
+  const fullText = "Hi, I'm Sumanth Koushik";
+
+  useEffect(() => {
+    let i = 0;
+    const typing = setInterval(() => {
+      if (i < fullText.length) {
+        setDisplayText(fullText.substring(0, i + 1));
+        i++;
+      } else {
+        clearInterval(typing);
+      }
+    }, 100);
+
+    return () => clearInterval(typing);
+  }, []);
+
+
   return (
     <div className="container">
-    <section className="name">
-       <h1>
-          Hi, I'm Sumanth Koushik
+   <section className="name">
+       <h1 className="typing-effect">
+          {displayText}<span className="cursor">|</span>
         </h1>
     </section>
     <section className="home">

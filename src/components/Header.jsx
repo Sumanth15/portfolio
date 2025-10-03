@@ -60,7 +60,7 @@ const Header = () => {
               className="logo"
             >
               {/* <span className="logo-text">My</span> */}
-              <span className="logo-accent">My Portfolio</span>
+              <span className="logo-accent">Arresto Momentum! 🧙🏻 </span>
             </Typography>
 
             {/* Desktop Navigation */}
