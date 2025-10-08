@@ -11,7 +11,7 @@ const About = () => {
         and providing a delightful UX.
       </p>
       <p className="about-intro">
-        I am a graduate in Master of Computer Apllications from PES University, Banglore in 2023.
+        I am a graduate in Master of Computer Apllications from <a href="https://www.google.com/maps/place/PES+University/@12.934,77.501,17z" target="_blank">PES University, Bangalore</a>,in 2023.
         My specialization is in Full Stack Web Development and Cybersecurity. 
         I have a strong foundation in both frontend and backend technologies. 
         From my college days I am into developing projects and learning new technologies.
