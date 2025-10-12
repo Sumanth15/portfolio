@@ -121,11 +121,31 @@ const Contact = () => {
           </button>
         </form>
 
-        <div className="contact-footer">
-          Prefer email? Reach me at{" "}
-          <a href="mailto:sumanthkoushiksd@gmail.com">
-            sumanthkoushiksd@gmail.com
-          </a>
+       <div className="contact-footer">
+          <p>
+            Prefer email? Reach me at{" "}
+            <a href="mailto:sumanthkoushiksd@gmail.com">
+              sumanthkoushiksd@gmail.com
+            </a>
+          </p>
+          <div className="social-links">
+            <a 
+              href="https://github.com/Sumanth15" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <i className="fab fa-github"></i>
+            </a>
+            <a 
+              href="https://www.instagram.com/sumanth_koushik/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <i className="fab fa-instagram"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
