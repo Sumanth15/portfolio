@@ -130,6 +130,14 @@ const Contact = () => {
           </p>
           <div className="social-links">
             <a 
+              href="https://www.linkedin.com/in/sumanth-koushik-s-d-98082a246/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i className="fab fa-linkedin"></i>
+            </a>
+            <a 
               href="https://github.com/Sumanth15" 
               target="_blank" 
               rel="noopener noreferrer"
