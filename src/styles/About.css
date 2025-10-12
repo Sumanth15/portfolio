@@ -53,3 +53,93 @@
   margin-bottom: 0.5rem;
   color: #444;
 }
+
+.tech-stack-section {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #f9fafb;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.tech-stack-section h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.tech-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+.tech-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  min-width: 90px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.tech-icon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.tech-icon i {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.tech-icon svg {
+  width: 40px;
+  height: 40px;
+  color: #333;
+}
+
+.tech-icon span {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #555;
+  text-align: center;
+}
+
+/* Specific icon colors on hover */
+.tech-icon:hover i.fa-android { color: #3DDC84; }
+.tech-icon:hover i.fa-react { color: #61DAFB; }
+.tech-icon:hover i.fa-node-js { color: #339933; }
+.tech-icon:hover i.fa-html5 { color: #E34F26; }
+.tech-icon:hover i.fa-css3-alt { color: #1572B6; }
+.tech-icon:hover i.fa-js { color: #F7DF1E; }
+.tech-icon:hover i.fa-bootstrap { color: #7952B3; }
+.tech-icon:hover i.fa-git-alt { color: #F05032; }
+.tech-icon:hover i.fa-figma { color: #F24E1E; }
+.tech-icon:hover i.fa-java { color: #007396; }
+.tech-icon:hover i.fa-aws { color: #FF9900; }
+
+@media (max-width: 768px) {
+  .tech-icons {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 1rem;
+  }
+  
+  .tech-icon {
+    min-width: 70px;
+    padding: 0.75rem;
+  }
+  
+  .tech-icon i {
+    font-size: 2rem;
+  }
+}
